@@ -16,3 +16,5 @@ export class ControleEditora {
     return editoras;
   }
 }
+
+export const controleEditora = new ControleEditora();

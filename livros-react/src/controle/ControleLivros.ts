@@ -42,3 +42,5 @@ export class ControleLivro {
     }
   }
 }
+
+export const controleLivro = new ControleLivro();

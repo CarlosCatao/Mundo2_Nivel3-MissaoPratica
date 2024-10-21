@@ -38,6 +38,14 @@
 }
 
 .table-head-bg-black {
-  background-color: black;
-  color: white;
+  background-color: black !important;
+  color: white !important;
+}
+
+.zebra-striped tr:nth-child(odd) {
+  background-color: #c2c2c2de; /* Light gray for hover effect */
+}
+
+.zebra-striped tr:nth-child(even) {
+  background-color: white; /* Cor de fundo das linhas pares */
 }
