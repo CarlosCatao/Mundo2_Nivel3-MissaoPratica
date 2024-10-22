@@ -1,7 +1,6 @@
-// Menu.tsx
 import React from 'react';
 import Link from 'next/link';
-import styles from '../styles/Menu.module.css'; // Importando o arquivo CSS
+import styles from '../styles/Menu.module.css';
 
 export const Menu: React.FC = () => {
   return (

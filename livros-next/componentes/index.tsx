@@ -1,4 +1,3 @@
-// index.tsx
 import Head from 'next/head';
 import { Menu } from './Menu';
 import styles from '../styles/Home.module.css';

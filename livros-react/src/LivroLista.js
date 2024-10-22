@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { ControleLivro } from './controle/ControleLivros'; // Importação nomeada
-import { ControleEditora } from './controle/ControleEditora'; // Importação nomeada
+import { ControleLivro } from './controle/ControleLivros';
+import { ControleEditora } from './controle/ControleEditora';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -8,7 +8,7 @@ const LivroLista = () => {
   const [livros, setLivros] = useState([]);
   const [carregado, setCarregado] = useState(false);
   
-  const controleLivros = new ControleLivro(); // Instanciando o controlador de livros
+  const controleLivros = new ControleLivro();    // Instanciando o controlador de livros
   const controleEditora = new ControleEditora(); // Instanciando o controlador de editoras
 
   useEffect(() => {
@@ -22,16 +22,14 @@ const LivroLista = () => {
 
   const excluir = (codigo) => {
     controleLivros.excluir(codigo);
-    setCarregado(false); // Força a recarga da lista
+    setCarregado(false);
   };
 
   return (
     <main>
 
-      {/* Catalog title */}
       <h1 style={{ paddingLeft: '10%', textAlign: 'left' }}>Catálogo de Livros</h1>
 
-      {/* Table */}
       <div className="d-flex justify-content-center mt-4">
         <table style={{ width: '80%' }}>
           

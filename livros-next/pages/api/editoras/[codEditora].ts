@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { controleEditora } from './index';  // Corrigir importação
+import { controleEditora } from './index';
 
 export default (req: NextApiRequest, res: NextApiResponse) => {
     try {

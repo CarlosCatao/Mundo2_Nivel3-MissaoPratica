@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from '../styles/Livro.module.css';
 import Head from 'next/head';
-import Menu from '../componentes/Menu'; // Importa o componente Menu
+import Menu from '../componentes/Menu';
 import LinhaLivro from '../componentes/LinhaLivro';
-import ControleEditora from '../classes/controle/ControleEditora'; // Importa o controle de editoras
-import ControleLivro from '../classes/controle/ControleLivro'; // Importa o controle de livros
+import ControleEditora from '../classes/controle/ControleEditora';
+import ControleLivro from '../classes/controle/ControleLivro';
 
 const LivroLista: React.FC = () => {
 
@@ -74,7 +74,7 @@ const excluirLivro = async (codigo: number) => {
               <th>Autores</th>
             </tr>
           </thead>
-          <tbody className="zebra-striped">
+          <tbody className={styles['zebra-striped']}>
             {carregado && livros.map((livro) => (
               <tr key={livro.codigo}>
                 <td>

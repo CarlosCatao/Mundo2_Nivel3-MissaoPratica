@@ -1,35 +1,34 @@
-/* styles/Menu.module.css */
 .menu {
     width: 100%;
-    background-color: black; /* Cor de fundo */
-    padding: 1%; /* Espaçamento ao redor do menu */
-    display: flex; /* Flexbox para alinhamento */
-    justify-content: flex-start; /* alinhar a esquerda */
+    background-color: black;
+    padding: 1%;
+    display: flex;
+    justify-content: flex-start;
     position: relative;
     left: 0;
-    margin-left: 0; /* Remover qualquer deslocamento lateral */
+    margin-left: 0;
     box-sizing: border-box;
   }
   
   .menu ul {
-    list-style: none; /* Remover a marcação de lista */
-    display: flex; /* Flexbox para alinhar itens horizontalmente */
-    gap: 20px; /* Espaçamento entre os itens */
+    list-style: none;
+    display: flex;
+    gap: 20px;
     padding: 0;
     margin: 0;
   }
   
   .menu li {
-    display: inline-block; /* Exibir itens em linha */
+    display: inline-block;
   }
   
   .menu li a {
-    text-decoration: none; /* Remover sublinhado */
-    color:  white;  /* Cor do texto */
-    font-weight: bold; /* Deixar o texto em negrito */
+    text-decoration: none;
+    color:  white;
+    font-weight: bold;
   }
   
   .menu li a:hover {
-    text-decoration: underline; /* Sublinhado ao passar o mouse */
+    text-decoration: underline;
   }
   

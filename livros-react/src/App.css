@@ -43,9 +43,9 @@
 }
 
 .zebra-striped tr:nth-child(odd) {
-  background-color: #c2c2c2de; /* Light gray for hover effect */
+  background-color: #c2c2c2de;
 }
 
 .zebra-striped tr:nth-child(even) {
-  background-color: white; /* Cor de fundo das linhas pares */
+  background-color: white;
 }

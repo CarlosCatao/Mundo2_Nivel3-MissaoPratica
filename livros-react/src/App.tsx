@@ -10,7 +10,6 @@ function App() {
 
         <div>
 
-            {/* Navigation bar fixed at the top */}
             <nav className="navbar navbar-dark bg-dark fixed-top">
                 <div className="container-fluid">
                     <ul className="navbar-nav d-flex flex-row">
@@ -24,10 +23,9 @@ function App() {
                 </div>
             </nav>
 
-            {/* Add some padding to the top to avoid content being hidden behind the navbar */}
             <div className="container mt-5 pt-5">
 
-                {/* Routes */}
+                {/* Definição das Rotas */}
                 <Routes>
                     <Route path="/" element={<LivroLista />} />
                     <Route path="/dados" element={<LivroDados />} />

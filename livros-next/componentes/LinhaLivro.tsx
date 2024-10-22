@@ -1,13 +1,13 @@
 import React from 'react';
-import { controleEditora } from '../classes/controle/ControleEditora'; // Importação nomeada
+import { controleEditora } from '../classes/controle/ControleEditora';
 
-// b) Definição da interface LinhaLivroProps
+// Definição da interface LinhaLivroProps
 interface LinhaLivroProps {
   livro:  any;
   excluir: (codigo: number) => void;
 }
 
-// c) Definição do componente exportável LinhaLivro
+// Definição do componente exportável LinhaLivro
 const LinhaLivro: React.FC<LinhaLivroProps> = ({ livro, excluir }) => {
 
   const nomeEditora = controleEditora.getNomeEditora(livro.codEditora);

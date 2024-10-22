@@ -1,15 +1,15 @@
 import { useState } from 'react';
 import styles from '../styles/Livro.module.css'; // estilo para livros
 import Head from 'next/head';
-import Menu from '../componentes/Menu'; // Supondo que Menu esteja implementado
-import ControleEditora from '../classes/controle/ControleEditora'; // Importar o controle de editoras
+import Menu from '../componentes/Menu';
+import ControleEditora from '../classes/controle/ControleEditora';
 import { Livro } from '../classes/modelo/Livro';
-import { useRouter } from 'next/router'; // Para navegação
+import { useRouter } from 'next/router';
 
-// Definir o objeto controleEditora
+// Define o objeto controleEditora
 const controleEditora = new ControleEditora();
 
-// Definir a constante baseURL
+// Define a constante baseURL
 const baseURL = "http://localhost:3000/api/livros";
 
 // Função assíncrona para incluir o livro
@@ -25,13 +25,13 @@ const incluirLivro = async (livro: Livro) => {
 };
 
 const LivroDados = () => {
-  // Definir vetor de opções com as editoras
+  // Define as opções de editoras
   const opcoes = controleEditora.getEditoras().map(editora => ({
     value: editora.codEditora,
     text: editora.nome,
   }));
 
-  // Definir estados para título, resumo, autores e codEditora
+  // Define estados para título, resumo, autores e codEditora
   const [titulo, setTitulo] = useState<string>('');
   const [resumo, setResumo] = useState<string>('');
   const [autores, setAutores] = useState<string>('');
@@ -49,13 +49,13 @@ const LivroDados = () => {
 
   // Método para inclusão de livro
   const incluir = async (evento: React.FormEvent<HTMLFormElement>) => {
-    evento.preventDefault(); // Prevenir comportamento padrão do formulário
+    evento.preventDefault();
     setLoading(true);
     const novoLivro: Livro = {
-      codigo: 0, // Código zero para novos livros
+      codigo: 0, // Código zero para livros novos
       titulo,
       resumo,
-      autores: autores.split('\n'), // Separar os autores por linha
+      autores: autores.split('\n'), // Separa os autores por linha
       codEditora,
     };
 
@@ -63,7 +63,7 @@ const LivroDados = () => {
     setLoading(false);
 
     if (sucesso) {
-      router.push('/LivroLista'); // Navegar para a lista de livros
+      router.push('/LivroLista'); // Navega na lista de livros
     } else {
       alert("Erro ao incluir o livro.");
     }
@@ -79,7 +79,7 @@ const LivroDados = () => {
       <Menu />
       <main className={styles.main}>
         <h1>Dados do Livro</h1>
-        {/* k) Formulário com campos para os estados */}
+        
         <form className={styles.formulario} onSubmit={incluir}>
 
           <div>
@@ -103,7 +103,7 @@ const LivroDados = () => {
             />
           </div>
 
-          {/* l) Lista de seleção (combo) para editoras */}
+          {/* Lista de seleção para editoras */}
           <div>
             <label htmlFor="editora">Editora:</label>
             <select id="editora" value={codEditora} onChange={tratarCombo}>
@@ -125,7 +125,6 @@ const LivroDados = () => {
             />
           </div>
           
-          {/* m) Botão de submissão */}
           <button type="submit">Salvar Dados</button>
         </form>
       </main>
