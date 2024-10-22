@@ -24,19 +24,26 @@ const livros: Array<Livro> = [
   },
 ];
 
-export class ControleLivro {
+export default class ControleLivro {
+
+  private livros: any[];
+
+  constructor() {
+    this.livros = livros;
+  }
+
   obterLivros(): Array<Livro> {
-    return livros;
+    return this.livros;
   }
 
   incluir(livro: Livro): void {
     const novoCodigo = Math.max(...livros.map(l => l.codigo)) + 1;
     livro.codigo = novoCodigo;
-    livros.push(livro);
+    this.livros.push(livro);
   }
 
   excluir(codigo: number): void {
-    const index = livros.findIndex(l => l.codigo === codigo);
+    const index = this.livros.findIndex(l => l.codigo === codigo);
     if (index >= 0) {
       livros.splice(index, 1);
     }

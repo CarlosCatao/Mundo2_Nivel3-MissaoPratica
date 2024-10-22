@@ -1,9 +1,10 @@
 import { Editora } from '../modelo/Editora';
 
 const editoras: Array<Editora> = [
-  { codEditora: 1, nome: 'Editora A' },
-  { codEditora: 2, nome: 'Editora B' },
-  { codEditora: 3, nome: 'Editora C' },
+  { codEditora: 1, nome: 'Alta Books' },
+  { codEditora: 2, nome: 'Bookman' },
+  { codEditora: 3, nome: 'Addison Wesley' },
+  { codEditora: 4, nome: 'Pearson' }
 ];
 
 export default class ControleEditora {

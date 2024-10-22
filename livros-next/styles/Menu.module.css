@@ -1,0 +1,35 @@
+/* styles/Menu.module.css */
+.menu {
+    width: 100%;
+    background-color: black; /* Cor de fundo */
+    padding: 1%; /* Espaçamento ao redor do menu */
+    display: flex; /* Flexbox para alinhamento */
+    justify-content: flex-start; /* alinhar a esquerda */
+    position: relative;
+    left: 0;
+    margin-left: 0; /* Remover qualquer deslocamento lateral */
+    box-sizing: border-box;
+  }
+  
+  .menu ul {
+    list-style: none; /* Remover a marcação de lista */
+    display: flex; /* Flexbox para alinhar itens horizontalmente */
+    gap: 20px; /* Espaçamento entre os itens */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    display: inline-block; /* Exibir itens em linha */
+  }
+  
+  .menu li a {
+    text-decoration: none; /* Remover sublinhado */
+    color:  white;  /* Cor do texto */
+    font-weight: bold; /* Deixar o texto em negrito */
+  }
+  
+  .menu li a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+  }
+  

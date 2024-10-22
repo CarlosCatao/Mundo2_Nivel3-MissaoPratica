@@ -1,0 +1,93 @@
+/* Home.module.css */
+.container {
+  width: 100%;
+  margin: 0;
+}
+
+.main {
+    width: 100%;
+    min-height: 90vh;
+  }
+
+.main h1 {
+  text-align: left;
+  padding-left: 10%;
+  padding-top: 1%;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 80%;
+  padding-left: 10%; /* Mesma margem que o h1 */
+  margin-left: auto; /* Centraliza a tabela */
+  margin-right: auto; /* Centraliza a tabela */
+}
+  
+  .title {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+.table-head-bg-black {
+  background-color: black !important;
+  color: white !important;
+}
+
+.zebra-striped tr:nth-child(odd) {
+  background-color: #c2c2c2de; /* Light gray for hover effect */
+}
+
+.zebra-striped tr:nth-child(even) {
+  background-color: white; /* Cor de fundo das linhas pares */
+}
+
+.formulario {
+  width: 80%; /* Largura do formulário */
+  max-width: 900px; /* Largura máxima opcional */
+  display: flex;
+  flex-direction: column; /* Coloca os itens em coluna */
+  align-items: flex-start; /* Alinha o texto à esquerda */
+  padding-left: 10%;
+}
+
+.formulario div {
+  width: 100%;
+  margin-bottom: 15px; /* Espaçamento entre os campos */
+}
+
+.formulario label {
+  margin-bottom: 5px; /* Espaçamento abaixo do label */
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%; /* Para ocupar toda a largura do formulário */
+  padding: 12px; /* Espaçamento interno */
+  border: 1px solid #ccc; /* Borda do campo */
+  border-radius: 4px; /* Bordas arredondadas */
+  font-size: 16px; /* Aumenta o tamanho da fonte */
+  box-sizing: border-box; /* Garante que o padding seja considerado na largura */
+}
+
+.formulario textarea {
+  height: 100px; /* Aumenta a altura do campo textarea */
+  resize: vertical; /* Permite que o usuário ajuste a altura */
+}
+
+.formulario button {
+  padding: 10px 15px; /* Espaçamento do botão */
+  background-color: #0070f3; /* Cor de fundo do botão */
+  color: white; /* Cor do texto do botão */
+  border: none; /* Remover borda do botão */
+  border-radius: 4px; /* Bordas arredondadas no botão */
+  cursor: pointer; /* Mudar o cursor para pointer */
+}
+
+.formulario button:hover {
+  background-color: #005bb5; /* Cor do botão ao passar o mouse */
+}
+
+
+
+
