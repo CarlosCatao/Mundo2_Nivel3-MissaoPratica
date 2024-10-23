@@ -6,11 +6,8 @@
 
 Este é um projeto didático com fins de criar uma aplicação web desenvolvida com Next.js e TypeScript para gerenciar um catálogo de livros. O aplicativo se comunica com uma API interna para realizar operações *CRUD (Create, Read, Update, Delete)* sobre livros e editoras.
 
-### Objetivos do Projeto
+## Objetivos do Projeto
 
-Nessa missão, é esperado que você demonstre habilidades para criação de
-front-end baseado em Next JS, com a definição de API HTTP internas.
-### Objetivos do Projeto
 
 * Explorar a ciação de um *front-end* baseado em **Next JS**;
 * Definição e manipulação de **API HTTP** interna.
@@ -19,8 +16,7 @@ front-end baseado em Next JS, com a definição de API HTTP internas.
 
 ![Estrutura](src/assets/images/Estrutura.png)
 <br> 
-
-
+ 
 ## Requisitos
 
 - Next JS (versão 13.5.7 ou superior)
@@ -37,7 +33,6 @@ front-end baseado em Next JS, com a definição de API HTTP internas.
 <img src="./src/assets/images/NextJS-Dark.png" align="left" height="25px" />: O Next.js é um framework que permite criar aplicações web e sites fullstack com React e JavaScript.<br>
 <img src="./src/assets/images/React-Dark.png" align="left" height="25px" />: React é um framework JavaScript que é usado para criar interfaces de usuário (UI) em aplicativos web.<br>
 <img src="./src/assets/images/json.png" align="left" height="25px" />: Formato de dados utilizado para troca de informações.<br>
-
 
 ## Organização do código e Funcionalidades: 
 
@@ -117,7 +112,7 @@ http://localhost:3000/Home
 
 Este projeto está licenciado sob a MIT License.
 
-Clone ou acesse o repositório https://github.com/CarlosCatao/Mundo2_Nivel3-MissaoPratica ou e faça o download do código.
+Clone ou acesse o repositório https://github.com/CarlosCatao/Mundo2_Nivel3-MissaoPratica/tree/main/livros-next ou e faça o download do código.
 
 ### Autor
 
